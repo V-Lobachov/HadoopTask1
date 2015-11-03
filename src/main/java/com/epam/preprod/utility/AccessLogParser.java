@@ -27,7 +27,6 @@ public class AccessLogParser {
         }catch (NumberFormatException e){
             LOGGER.error(String.format("CORRUPTED DATA %s", data));
         }
-
         return  log;
     }
 }

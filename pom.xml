@@ -12,11 +12,6 @@
         <hadoop.core>1.2.1</hadoop.core>
         <log4j.version>1.2.17</log4j.version>
         <mrunit.version>1.1.0</mrunit.version>
-        <yarn.client>2.7.1</yarn.client>
-        <yarn.common>2.7.1</yarn.common>
-        <yarn.api>2.7.1</yarn.api>
-        <hadoop.jobclient>2.2.0</hadoop.jobclient>
-        <hadoop.client>2.6.0</hadoop.client>
     </properties>
 
 
@@ -36,43 +31,6 @@
         </dependency>
 
         <dependency>
-            <groupId>org.apache.hadoop</groupId>
-            <artifactId>hadoop-mapreduce-client-jobclient</artifactId>
-            <version>${hadoop.jobclient}</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.hadoop</groupId>
-            <artifactId>hadoop-client</artifactId>
-            <version>${hadoop.client}</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.hadoop</groupId>
-            <artifactId>hadoop-yarn-api</artifactId>
-            <version>${yarn.api}</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.hadoop</groupId>
-            <artifactId>hadoop-yarn-common</artifactId>
-            <version>${yarn.common}</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.hadoop</groupId>
-            <artifactId>hadoop-yarn-client</artifactId>
-            <version>${yarn.client}</version>
-            <scope>provided</scope>
-        </dependency>
-
-
-
-        <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <version>${log4j.version}</version>
@@ -83,9 +41,12 @@
             <groupId>org.apache.mrunit</groupId>
             <artifactId>mrunit</artifactId>
             <version>${mrunit.version}</version>
-            <classifier>hadoop2</classifier>
+            <classifier>hadoop1</classifier>
             <scope>test</scope>
         </dependency>
+
+
+
     </dependencies>
 
 
