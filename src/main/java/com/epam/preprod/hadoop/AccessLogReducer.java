@@ -24,8 +24,8 @@ public class AccessLogReducer extends Reducer<Text, LongWritable, NullWritable, 
              sum+= data.get();
              counter++;
          }
-        avg = sum/counter;
-        output.set(String.format("%s, %f, %d", key.toString(), avg, sum));
+        avg = (double) sum/counter;
+        output.set(String.format("%s, %.2f, %d", key.toString(), avg, sum));
         context.write(NullWritable.get(), output);
     }
 

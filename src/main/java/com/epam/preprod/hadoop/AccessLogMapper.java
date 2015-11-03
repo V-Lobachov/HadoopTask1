@@ -1,8 +1,9 @@
 package com.epam.preprod.hadoop;
 
-import com.epam.preprod.com.epam.preprod.utility.AccessLogParser;
+
 import com.epam.preprod.model.AccessLog;
-import org.apache.hadoop.io.IntWritable;
+
+import com.epam.preprod.utility.AccessLogParser;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
