@@ -2,6 +2,8 @@ package com.epam.preprod.hadoop;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
+import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
@@ -17,8 +19,14 @@ public class AccessLogDriver extends Configured implements Tool {
 
     public int run(String[] strings) throws Exception {
         Configuration conf = this.getConf();
-        Job job = new Job(conf, "Configuration writer");
+        Job job = new Job(conf, "Log analyzer");
 
+        job.setJarByClass(AccessLogDriver.class);
+
+        job.setMapperClass(AccessLogMapper.class);
+
+        job.setMapOutputKeyClass(Text.class);
+        job.setMapOutputValueClass(IntWritable.class);
 
 
         return job.waitForCompletion(true) ? 0 : 1;
