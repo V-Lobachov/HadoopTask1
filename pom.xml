@@ -7,6 +7,26 @@
     <groupId>com.epam.nonprod.task</groupId>
     <artifactId>HadoopTask1</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <properties>
+        <hadoop.common>2.7.1</hadoop.common>
+        <hadoop.core>1.2.1</hadoop.core>
+    </properties>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-common</artifactId>
+            <version>${hadoop.common}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-core</artifactId>
+            <version>${hadoop.core}</version>
+        </dependency>
+
+    </dependencies>
 
 
 </project>
