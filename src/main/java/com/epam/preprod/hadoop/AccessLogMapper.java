@@ -13,10 +13,10 @@ import java.io.IOException;
 /**
  * Created by Volodymyr_Lobachov on 11/3/2015.
  */
-public class AccessLogMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
+public class AccessLogMapper extends Mapper<LongWritable, Text, Text, LongWritable> {
 
     private Text outputKey = new Text();
-    private IntWritable outputValue = new IntWritable();
+    private LongWritable outputValue = new LongWritable();
 
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
