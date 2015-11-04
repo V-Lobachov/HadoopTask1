@@ -1,13 +1,12 @@
 package com.epam.preprod.hadoop.test;
 
-import com.epam.preprod.hadoop.AccessLogCombiner;
-import com.epam.preprod.hadoop.WATCHER;
-import com.epam.preprod.hadoop.AccessLogMapper;
-import com.epam.preprod.hadoop.AccessLogReducer;
-import com.epam.preprod.hadoop.io.PairWritable;
+import com.epam.preprod.hadoop.prez1.AccessLogCombiner;
+import com.epam.preprod.hadoop.extension.WATCHER;
+import com.epam.preprod.hadoop.prez1.AccessLogMapper;
+import com.epam.preprod.hadoop.prez1.AccessLogReducer;
+import com.epam.preprod.hadoop.extension.PairWritable;
 import junit.framework.Assert;
 import org.apache.hadoop.io.LongWritable;
-import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mrunit.mapreduce.MapDriver;
 import org.apache.hadoop.mrunit.mapreduce.MapReduceDriver;
@@ -78,7 +77,7 @@ public class AccessLogTest {
 
         reduceDriver.withInput(new Text("ip7"), values);
 
-        reduceDriver.withOutput( new Text("ip7"), new Text("150.00, 300"));
+        reduceDriver.withOutput( new Text("ip7"), new Text("150.00,300"));
         reduceDriver.runTest();
     }
 

@@ -6,9 +6,11 @@ package com.epam.preprod.model;
 public class AccessLog {
     private String ip;
     private Integer requestBytes;
+    private String browser;
 
 
-    public AccessLog(){}
+    public AccessLog() {
+    }
 
     public String getIp() {
         return ip;
@@ -24,6 +26,14 @@ public class AccessLog {
 
     public void setRequestBytes(Integer requestBytes) {
         this.requestBytes = requestBytes;
+    }
+
+    public String getBrowser() {
+        return browser;
+    }
+
+    public void setBrowser(String browser) {
+        this.browser = browser;
     }
 
     @Override
