@@ -1,7 +1,7 @@
 package com.epam.preprod.hadoop;
 
 
-import com.epam.preprod.WATCHER;
+import com.epam.preprod.hadoop.io.PairWritable;
 import com.epam.preprod.model.AccessLog;
 
 import com.epam.preprod.utility.AccessLogParser;
@@ -17,11 +17,15 @@ import java.util.zip.DataFormatException;
 /**
  * Created by Volodymyr_Lobachov on 11/3/2015.
  */
-public class AccessLogMapper extends Mapper<LongWritable, Text, Text, LongWritable> {
+public class AccessLogMapper extends Mapper<LongWritable, Text, Text, PairWritable> {
 
     private static final Logger LOGGER = Logger.getLogger(AccessLogParser.class);
     private Text outputKey = new Text();
-    private LongWritable outputValue = new LongWritable();
+    private LongWritable requestSize = new LongWritable();
+    private PairWritable outputValue = new PairWritable();
+
+
+
 
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
@@ -30,7 +34,10 @@ public class AccessLogMapper extends Mapper<LongWritable, Text, Text, LongWritab
             AccessLog parsedLog = AccessLogParser.parse(value.toString());
 
             outputKey.set(parsedLog.getIp());
-            outputValue.set(parsedLog.getRequestBytes());
+            requestSize.set(parsedLog.getRequestBytes());
+
+            outputValue.setFirst(requestSize);
+            outputValue.setSecond(new LongWritable(1));
 
             context.write(outputKey, outputValue);
         } catch (DataFormatException e) {

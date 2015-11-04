@@ -1,9 +1,10 @@
 package com.epam.preprod.hadoop;
 
+import com.epam.preprod.hadoop.io.PairWritable;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.fs.Path;
-import org.apache.hadoop.io.LongWritable;
+
 import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
@@ -22,16 +23,16 @@ public class AccessLogDriver extends Configured implements Tool {
     }
 
     public int run(String[] args) throws Exception {
-        Configuration conf = this.getConf();
-        Job job = new Job(conf, "Log analyzer");
+        Job job = Job.getInstance(this.getConf(), "Log analyzer");
 
         job.setJarByClass(AccessLogDriver.class);
 
         job.setMapperClass(AccessLogMapper.class);
         job.setReducerClass(AccessLogReducer.class);
+        job.setCombinerClass(AccessLogCombiner.class);
 
         job.setMapOutputKeyClass(Text.class);
-        job.setMapOutputValueClass(LongWritable.class);
+        job.setMapOutputValueClass(PairWritable.class);
 
         job.setOutputKeyClass(NullWritable.class);
         job.setOutputValueClass(Text.class);

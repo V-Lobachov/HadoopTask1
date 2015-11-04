@@ -2,19 +2,100 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44e3314a-871c-456c-b96b-9194244f3bdc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/epam/preprod/hadoop/AccessLogCombiner.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/epam/preprod/hadoop/io/PairWritable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/epam/preprod/hadoop/WATCHER.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/AccessLogCombiner.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_extensions_guice_servlet_3_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_guice_3_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_contribs_jersey_guice_1_9.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_9.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_daemon_commons_daemon_1_0_13.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_6_2_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_common_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_common_test_jar_tests_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_hdfs_test_jar_tests_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_app_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_common_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_core_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_hs_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_jobclient_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_jobclient_test_jar_tests_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_shuffle_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_minicluster_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_api_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_client_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_common_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_server_applicationhistoryservice_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_server_common_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_server_nodemanager_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_server_resourcemanager_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_server_tests_test_jar_tests_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_server_web_proxy_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_leveldbjni_leveldbjni_all_1_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/io/PairWritable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/com.epam.preprod.hadoop.test.AccessLogTest.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="DELETED" beforePath="D:\Projects\HadoopTask1\.idea\libraries\Maven__ant_ant_1_6_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\HadoopTask1\.idea\libraries\Maven__com_google_code_gson_gson_2_2_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\HadoopTask1\.idea\libraries\Maven__hsqldb_hsqldb_1_8_0_10.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\HadoopTask1\.idea\libraries\Maven__io_netty_netty_3_7_0_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\HadoopTask1\.idea\libraries\Maven__junit_junit_4_10.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\HadoopTask1\.idea\libraries\Maven__org_apache_commons_commons_math_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\HadoopTask1\.idea\libraries\Maven__org_apache_curator_curator_client_2_7_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\HadoopTask1\.idea\libraries\Maven__org_apache_curator_curator_framework_2_7_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\HadoopTask1\.idea\libraries\Maven__org_apache_curator_curator_recipes_2_7_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\HadoopTask1\.idea\libraries\Maven__org_apache_htrace_htrace_core_3_1_0_incubating.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\HadoopTask1\.idea\libraries\Maven__org_eclipse_jdt_core_3_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\HadoopTask1\.idea\libraries\Maven__org_mortbay_jetty_jsp_2_1_6_1_14.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\HadoopTask1\.idea\libraries\Maven__org_mortbay_jetty_jsp_api_2_1_6_1_14.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\HadoopTask1\.idea\libraries\Maven__org_mortbay_jetty_servlet_api_2_5_6_1_14.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\HadoopTask1\.idea\libraries\Maven__oro_oro_2_0_8.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\HadoopTask1\target\HadoopTask1-1.0-SNAPSHOT-shaded.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\HadoopTask1\target\classes\com\epam\preprod\WATCHER.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Projects\HadoopTask1\target\surefire-reports\com.epam.preprod.hadoop.test.AccessLogMapperTest.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/epam/preprod/model/AccessLog.class" afterPath="$PROJECT_DIR$/target/classes/com/epam/preprod/model/AccessLog.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/epam/preprod/hadoop/AccessLogDriver.class" afterPath="$PROJECT_DIR$/target/classes/com/epam/preprod/hadoop/AccessLogDriver.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/epam/preprod/hadoop/AccessLogMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/epam/preprod/hadoop/AccessLogMapper.class" />
-      <change type="MODIFICATION" beforePath="D:\Projects\HadoopTask1\target\test-classes\com\epam\preprod\hadoop\test\AccessLogMapperTest.class" afterPath="D:\Projects\HadoopTask1\target\test-classes\com\epam\preprod\hadoop\test\AccessLogMapperTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/epam/preprod/utility/AccessLogParser.class" afterPath="$PROJECT_DIR$/target/classes/com/epam/preprod/utility/AccessLogParser.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/epam/preprod/hadoop/AccessLogReducer.class" afterPath="$PROJECT_DIR$/target/classes/com/epam/preprod/hadoop/AccessLogReducer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/epam/preprod/hadoop/test/AccessLogTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/epam/preprod/hadoop/test/AccessLogTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HadoopTask1-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/HadoopTask1-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/original-HadoopTask1-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/original-HadoopTask1-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/AccessLogDriver.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/AccessLogDriver.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/AccessLogMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/AccessLogMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/preprod/utility/AccessLogParser.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/preprod/utility/AccessLogParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/AccessLogReducer.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/AccessLogReducer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/epam/preprod/hadoop/test/AccessLogTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/epam/preprod/hadoop/test/AccessLogTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HadoopTask1.iml" afterPath="$PROJECT_DIR$/HadoopTask1.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependency-reduced-pom.xml" afterPath="$PROJECT_DIR$/dependency-reduced-pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\Projects\HadoopTask1\src\test\java\com\epam\preprod\hadoop\test\AccessLogMapperTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/epam/preprod/hadoop/test/AccessLogTest.java" />
+      <change type="MOVED" beforePath="D:\Projects\HadoopTask1\.idea\libraries\Maven__com_google_code_findbugs_jsr305_3_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" />
+      <change type="MOVED" beforePath="D:\Projects\HadoopTask1\.idea\libraries\Maven__commons_logging_commons_logging_1_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" />
+      <change type="MOVED" beforePath="D:\Projects\HadoopTask1\.idea\libraries\Maven__org_apache_hadoop_hadoop_annotations_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_annotations_2_5_1.xml" />
+      <change type="MOVED" beforePath="D:\Projects\HadoopTask1\.idea\libraries\Maven__org_apache_hadoop_hadoop_auth_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_auth_2_5_1.xml" />
+      <change type="MOVED" beforePath="D:\Projects\HadoopTask1\.idea\libraries\Maven__org_apache_hadoop_hadoop_common_2_7_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_client_2_5_1.xml" />
+      <change type="MOVED" beforePath="D:\Projects\HadoopTask1\.idea\libraries\Maven__org_apache_hadoop_hadoop_core_1_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_hdfs_2_5_1.xml" />
+      <change type="MOVED" beforePath="D:\Projects\HadoopTask1\.idea\libraries\Maven__org_apache_httpcomponents_httpclient_4_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_2_5.xml" />
+      <change type="MOVED" beforePath="D:\Projects\HadoopTask1\.idea\libraries\Maven__org_apache_mrunit_mrunit_hadoop1_1_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_mrunit_mrunit_hadoop2_1_1_0.xml" />
+      <change type="MOVED" beforePath="D:\Projects\HadoopTask1\.idea\libraries\Maven__org_codehaus_jackson_jackson_jaxrs_1_8_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_jaxrs_1_9_13.xml" />
+      <change type="MOVED" beforePath="D:\Projects\HadoopTask1\.idea\libraries\Maven__org_codehaus_jackson_jackson_xc_1_8_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_xc_1_9_13.xml" />
+      <change type="MOVED" beforePath="D:\Projects\HadoopTask1\.idea\libraries\Maven__org_hamcrest_hamcrest_core_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+      <change type="MOVED" beforePath="D:\Projects\HadoopTask1\.idea\libraries\Maven__org_slf4j_slf4j_api_1_7_10.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" />
+      <change type="MOVED" beforePath="D:\Projects\HadoopTask1\.idea\libraries\Maven__org_slf4j_slf4j_log4j12_1_7_10.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_5.xml" />
+      <change type="MOVED" beforePath="D:\Projects\HadoopTask1\.idea\libraries\Maven__tomcat_jasper_compiler_5_5_12.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tomcat_jasper_compiler_5_5_23.xml" />
+      <change type="MOVED" beforePath="D:\Projects\HadoopTask1\.idea\libraries\Maven__tomcat_jasper_runtime_5_5_12.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tomcat_jasper_runtime_5_5_23.xml" />
+      <change type="MOVED" beforePath="D:\Projects\HadoopTask1\src\main\java\com\epam\preprod\WATCHER.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/WATCHER.java" />
+      <change type="MOVED" beforePath="D:\Projects\HadoopTask1\target\surefire-reports\TEST-com.epam.preprod.hadoop.test.AccessLogMapperTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.epam.preprod.hadoop.test.AccessLogTest.xml" />
     </list>
     <ignored path="HadoopTask1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,9 +121,11 @@
       <file leaf-file-name="AccessLogDriver.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/AccessLogDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="20" selection-end-column="25" />
-              <folding />
+            <state vertical-scroll-proportion="-12.206897">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,21 +142,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/ArrayList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="425" column="40" selection-start-line="425" selection-start-column="7" selection-end-line="425" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AccessLogMapper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/AccessLogMapper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+              <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -83,7 +156,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/AccessLogReducer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="37" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -93,7 +166,7 @@
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+              <caret line="70" column="36" selection-start-line="70" selection-start-column="36" selection-end-line="70" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -102,11 +175,31 @@
       <file leaf-file-name="AccessLogTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/preprod/hadoop/test/AccessLogTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5165877">
-              <caret line="64" column="46" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="46" />
+            <state vertical-scroll-proportion="1.2006319">
+              <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
               <folding>
-                <element signature="e#2410#2424#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WATCHER.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/WATCHER.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PairWritable.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/io/PairWritable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -116,7 +209,18 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-              <folding />
+              <folding>
+                <element signature="e#224#225#0" expanded="false" />
+                <element signature="e#249#250#0" expanded="false" />
+                <element signature="e#285#286#0" expanded="false" />
+                <element signature="e#313#314#0" expanded="false" />
+                <element signature="e#353#354#0" expanded="false" />
+                <element signature="e#388#389#0" expanded="false" />
+                <element signature="e#445#446#0" expanded="false" />
+                <element signature="e#493#494#0" expanded="false" />
+                <element signature="e#539#540#0" expanded="false" />
+                <element signature="e#605#606#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -126,8 +230,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -144,13 +248,16 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/epam/preprod/model/AccessLog.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/preprod/com/epam/preprod/utility/AccessLogParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/AccessLogDriver.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/AccessLogReducer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/preprod/utility/AccessLogParser.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/preprod/Watcher.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/AccessLogMapper.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/preprod/hadoop/test/AccessLogMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/AccessLogReducer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/io/PairWritable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/WATCHER.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/AccessLogMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/AccessLogCombiner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/AccessLogDriver.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/preprod/hadoop/test/AccessLogTest.java" />
       </list>
     </option>
@@ -177,10 +284,6 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="HadoopTask1" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Dependencies" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
         </PATH_ELEMENT>
       </PATH>
       <PATH>
@@ -333,6 +436,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HadoopTask1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HadoopTask1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="preprod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hadoop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -352,6 +485,11 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.epam.preprod.hadoop" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="false" name="AccessLogDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -654,11 +792,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32792208" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28463203" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16044776" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28463203" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28463203" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819384" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15458423" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -699,7 +837,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="20" selection-end-column="25" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -750,7 +890,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="22" selection-end-column="5" />
           <folding>
-            <element signature="e#2410#2424#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -759,7 +899,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding />
+          <folding>
+            <element signature="e#224#225#0" expanded="false" />
+            <element signature="e#249#250#0" expanded="false" />
+            <element signature="e#285#286#0" expanded="false" />
+            <element signature="e#313#314#0" expanded="false" />
+            <element signature="e#353#354#0" expanded="false" />
+            <element signature="e#388#389#0" expanded="false" />
+            <element signature="e#445#446#0" expanded="false" />
+            <element signature="e#493#494#0" expanded="false" />
+            <element signature="e#539#540#0" expanded="false" />
+            <element signature="e#605#606#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -777,34 +928,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="425" column="40" selection-start-line="425" selection-start-column="7" selection-end-line="425" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/preprod/model/AccessLog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding />
+          <folding>
+            <element signature="e#224#225#0" expanded="false" />
+            <element signature="e#249#250#0" expanded="false" />
+            <element signature="e#285#286#0" expanded="false" />
+            <element signature="e#313#314#0" expanded="false" />
+            <element signature="e#353#354#0" expanded="false" />
+            <element signature="e#388#389#0" expanded="false" />
+            <element signature="e#445#446#0" expanded="false" />
+            <element signature="e#493#494#0" expanded="false" />
+            <element signature="e#539#540#0" expanded="false" />
+            <element signature="e#605#606#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/AccessLogDriver.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="20" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.4186414">
+          <caret line="425" column="40" selection-start-line="425" selection-start-column="7" selection-end-line="425" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -819,10 +965,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/preprod/WATCHER.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/io/PairWritable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21484992">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/WATCHER.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -830,7 +984,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/AccessLogMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -838,17 +992,45 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/AccessLogReducer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="37" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/AccessLogDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.206897">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70" column="36" selection-start-line="70" selection-start-column="36" selection-end-line="70" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/AccessLogCombiner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.77883095">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/preprod/hadoop/test/AccessLogTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5165877">
-          <caret line="64" column="46" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="46" />
+        <state vertical-scroll-proportion="1.2006319">
+          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
           <folding>
-            <element signature="e#2410#2424#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
