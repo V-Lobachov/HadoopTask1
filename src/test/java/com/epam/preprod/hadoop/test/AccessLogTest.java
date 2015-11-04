@@ -1,7 +1,10 @@
 package com.epam.preprod.hadoop.test;
 
+import com.epam.preprod.WATCHER;
 import com.epam.preprod.hadoop.AccessLogMapper;
 import com.epam.preprod.hadoop.AccessLogReducer;
+import junit.framework.Assert;
+import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.io.Text;
@@ -12,11 +15,13 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Volodymyr_Lobachov on 11/3/2015.
  */
-public class AccessLogMapperTest {
+public class AccessLogTest {
 
     static {
         System.setProperty("hadoop.home.dir", "d:\\");
@@ -26,7 +31,7 @@ public class AccessLogMapperTest {
     private ReduceDriver<Text, LongWritable, NullWritable, Text> reduceDriver;
     private MapReduceDriver<LongWritable, Text, Text, LongWritable, NullWritable, Text> mapReduceDriver;
 
-    private String  mInputData = "ip1 - - [24/Apr/2011:04:14:36 -0400] \"GET /~strabal/grease/photo9/927-5.jpg HTTP/1.1\" 200 42011 \"-\" \"Mozilla/5.0 (compatible; YandexImages/3.0; +http://yandex.com/bots)\"";
+    private String mInputData = "ip1 - - [24/Apr/2011:04:14:36 -0400] \"GET /~strabal/grease/photo9/927-5.jpg HTTP/1.1\" 200 42011 \"-\" \"Mozilla/5.0 (compatible; YandexImages/3.0; +http://yandex.com/bots)\"";
     private Text mOutputKey = new Text("ip1");
     private LongWritable mOutputValue = new LongWritable(42011);
 
@@ -45,6 +50,27 @@ public class AccessLogMapperTest {
         mapDriver.withInput(new LongWritable(), new Text(mInputData));
         mapDriver.withOutput(mOutputKey, mOutputValue);
         mapDriver.runTest();
+    }
+
+    @Test
+    public void textCorruptedMapperData() throws IOException {
+        mapDriver.withInput(new LongWritable(), new Text(""));
+        mapDriver.runTest();
+        Assert.assertEquals("Expected 1 counter increment", 1, mapDriver.getCounters()
+                .findCounter(WATCHER.CORRUPTED).getValue());
+    }
+
+
+    @Test
+    public void testReducer() throws IOException{
+        List<LongWritable> values = new ArrayList<LongWritable>();
+        values.add(new LongWritable(210));
+        values.add(new LongWritable(90));
+
+        reduceDriver.withInput(new Text("ip7"), values);
+
+        reduceDriver.withOutput(NullWritable.get(), new Text("ip7, 150.00, 300"));
+        reduceDriver.runTest();
     }
 
 
