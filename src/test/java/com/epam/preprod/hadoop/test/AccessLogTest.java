@@ -29,9 +29,9 @@ public class AccessLogTest {
     }
 
     private MapDriver<LongWritable, Text, Text, PairWritable> mapDriver;
-    private ReduceDriver<Text, PairWritable, NullWritable, Text> reduceDriver;
+    private ReduceDriver<Text, PairWritable, Text, Text> reduceDriver;
     private ReduceDriver<Text, PairWritable, Text, PairWritable> combinerDriver;
-    private MapReduceDriver<LongWritable, Text, Text, PairWritable, NullWritable, Text> mapReduceDriver;
+    private MapReduceDriver<LongWritable, Text, Text, PairWritable, Text, Text> mapReduceDriver;
 
     private String mInputData = "ip1 - - [24/Apr/2011:04:14:36 -0400] \"GET /~strabal/grease/photo9/927-5.jpg HTTP/1.1\" 200 42011 \"-\" \"Mozilla/5.0 (compatible; YandexImages/3.0; +http://yandex.com/bots)\"";
     private Text mOutputKey = new Text("ip1");
@@ -78,7 +78,7 @@ public class AccessLogTest {
 
         reduceDriver.withInput(new Text("ip7"), values);
 
-        reduceDriver.withOutput(NullWritable.get(), new Text("ip7, 150.00, 300"));
+        reduceDriver.withOutput( new Text("ip7"), new Text("150.00, 300"));
         reduceDriver.runTest();
     }
 
