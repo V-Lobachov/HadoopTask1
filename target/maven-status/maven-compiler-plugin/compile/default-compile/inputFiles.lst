@@ -1,0 +1,13 @@
+D:\Projects\HadoopTask1\src\main\java\com\epam\preprod\utility\AccessLogParser.java
+D:\Projects\HadoopTask1\src\main\java\com\epam\preprod\hadoop\prez1\AccessLogDriver.java
+D:\Projects\HadoopTask1\src\main\java\com\epam\preprod\hadoop\prez2\AccessLogCombiner.java
+D:\Projects\HadoopTask1\src\main\java\com\epam\preprod\hadoop\prez2\AccessLogMapper.java
+D:\Projects\HadoopTask1\src\main\java\com\epam\preprod\hadoop\prez1\AccessLogMapper.java
+D:\Projects\HadoopTask1\src\main\java\com\epam\preprod\hadoop\extension\WATCHER.java
+D:\Projects\HadoopTask1\src\main\java\com\epam\preprod\hadoop\prez1\AccessLogReducer.java
+D:\Projects\HadoopTask1\src\main\java\com\epam\preprod\hadoop\extension\PairOutputWritable.java
+D:\Projects\HadoopTask1\src\main\java\com\epam\preprod\hadoop\prez2\AccessLogDriver.java
+D:\Projects\HadoopTask1\src\main\java\com\epam\preprod\hadoop\prez1\AccessLogCombiner.java
+D:\Projects\HadoopTask1\src\main\java\com\epam\preprod\hadoop\prez2\AccessLogReducer.java
+D:\Projects\HadoopTask1\src\main\java\com\epam\preprod\hadoop\extension\PairWritable.java
+D:\Projects\HadoopTask1\src\main\java\com\epam\preprod\model\AccessLog.java

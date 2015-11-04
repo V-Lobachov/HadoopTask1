@@ -5,11 +5,12 @@ import com.epam.preprod.hadoop.extension.PairWritable;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.io.SequenceFile;
 import org.apache.hadoop.io.Text;
+import org.apache.hadoop.io.compress.SnappyCodec;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.SequenceFileOutputFormat;
-import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
 
@@ -25,9 +26,6 @@ public class AccessLogDriver extends Configured implements Tool {
     public int run(String[] args) throws Exception {
         Configuration conf = this.getConf();
         conf.set("mapreduce.output.textoutputformat.separator", ",");
-        conf.setBoolean("mapreduce.output.fileoutputformat.compress", true );
-        conf.set("mapreduce.output.fileoutputformat.compress.codec", "org.apache.hadoop.io.compress.SnappyCodec");
-
 
 
         Job job = Job.getInstance(conf, "Log analyzer");
@@ -48,7 +46,9 @@ public class AccessLogDriver extends Configured implements Tool {
 
         TextInputFormat.addInputPath(job, new Path(args[0]));
         SequenceFileOutputFormat.setOutputPath(job, new Path(args[1]));
-
+        SequenceFileOutputFormat.setCompressOutput(job, true);
+        SequenceFileOutputFormat.setOutputCompressionType(job, SequenceFile.CompressionType.BLOCK);
+        SequenceFileOutputFormat.setOutputCompressorClass(job, SnappyCodec.class);
         return job.waitForCompletion(true) ? 0 : 1;
     }
 }

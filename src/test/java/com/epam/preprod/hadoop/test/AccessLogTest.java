@@ -23,9 +23,6 @@ import java.util.List;
  */
 public class AccessLogTest {
 
-    static {
-        System.setProperty("hadoop.home.dir", "d:\\");
-    }
 
     private MapDriver<LongWritable, Text, Text, PairWritable> mapDriver;
     private ReduceDriver<Text, PairWritable, Text, Text> reduceDriver;

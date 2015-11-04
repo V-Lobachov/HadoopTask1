@@ -1,0 +1,13 @@
+com\epam\preprod\model\AccessLog.class
+com\epam\preprod\hadoop\prez1\AccessLogReducer.class
+com\epam\preprod\utility\AccessLogParser.class
+com\epam\preprod\hadoop\extension\PairWritable.class
+com\epam\preprod\hadoop\prez2\AccessLogCombiner.class
+com\epam\preprod\hadoop\prez2\AccessLogReducer.class
+com\epam\preprod\hadoop\prez2\AccessLogDriver.class
+com\epam\preprod\hadoop\prez1\AccessLogMapper.class
+com\epam\preprod\hadoop\prez1\AccessLogCombiner.class
+com\epam\preprod\hadoop\extension\PairOutputWritable.class
+com\epam\preprod\hadoop\prez1\AccessLogDriver.class
+com\epam\preprod\hadoop\extension\WATCHER.class
+com\epam\preprod\hadoop\prez2\AccessLogMapper.class
