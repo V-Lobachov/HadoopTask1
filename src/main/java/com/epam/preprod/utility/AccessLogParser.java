@@ -4,6 +4,8 @@ import com.epam.preprod.model.AccessLog;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.zip.DataFormatException;
 
 /**
@@ -23,12 +25,27 @@ public class AccessLogParser {
         try {
             log.setIp(splitedData.get(0));
             log.setRequestBytes(Integer.parseInt(splitedData.get(9)));
-            log.setBrowser(splitedData.get(11).split("/")[0]);
+            log.setBrowser(parseBrowser(splitedData.get(11)));
 
         } catch (NumberFormatException | IndexOutOfBoundsException e) {
             throw new DataFormatException();
         }
         return log;
+    }
+
+
+    private static String parseBrowser(String rawData) {
+        String browser = null;
+        Pattern pattern = Pattern.compile("^\"[A-Z][A-z1-9 -]*\\/\\d*.*");
+        Matcher matcher = pattern.matcher(rawData);
+        if (matcher.matches()) {
+            browser = matcher.group();
+            browser = browser.split("/")[0].substring(1);
+        }else{
+            browser = "Other";
+        }
+
+        return browser;
     }
 }
 

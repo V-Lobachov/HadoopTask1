@@ -11,6 +11,8 @@ import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.log4j.Logger;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.zip.DataFormatException;
 
 /**
@@ -18,12 +20,11 @@ import java.util.zip.DataFormatException;
  */
 public class AccessLogMapper extends Mapper<LongWritable, Text, Text, PairWritable> {
 
+    private HashMap<String, Integer> browserCounter = new HashMap<>();
     private static final Logger LOGGER = Logger.getLogger(AccessLogParser.class);
     private Text outputKey = new Text();
     private LongWritable requestSize = new LongWritable();
     private PairWritable outputValue = new PairWritable();
-
-
 
 
     @Override
@@ -31,7 +32,9 @@ public class AccessLogMapper extends Mapper<LongWritable, Text, Text, PairWritab
 
         try {
             AccessLog parsedLog = AccessLogParser.parse(value.toString());
-            context.getCounter("USER BROWSER", parsedLog.getBrowser()).increment(1);
+            browserCount(parsedLog);
+
+
             outputKey.set(parsedLog.getIp());
             requestSize.set(parsedLog.getRequestBytes());
 
@@ -43,5 +46,24 @@ public class AccessLogMapper extends Mapper<LongWritable, Text, Text, PairWritab
             context.getCounter(WATCHER.CORRUPTED).increment(1);
             LOGGER.error("Input data was corrupted, please check your data");
         }
+    }
+
+    private void browserCount(AccessLog parsedLog) {
+        String key = String.format("%s %s", parsedLog.getIp(), parsedLog.getBrowser());
+        Integer browserUsers = browserCounter.get(key);
+
+        if (browserUsers != null) {
+            browserCounter.put(key, browserUsers + 1);
+        } else {
+            browserCounter.put(key, 1);
+        }
+    }
+
+    @Override
+    protected void cleanup(Context context) throws IOException, InterruptedException {
+        for (Map.Entry<String, Integer> data : browserCounter.entrySet()) {
+            context.getCounter("USER BROWSER", data.getKey().split(" ")[1]).increment(data.getValue());
+        }
+
     }
 }

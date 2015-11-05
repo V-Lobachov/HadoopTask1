@@ -5,6 +5,8 @@ import com.epam.preprod.hadoop.extension.WATCHER;
 import com.epam.preprod.hadoop.prez1.AccessLogMapper;
 import com.epam.preprod.hadoop.prez1.AccessLogReducer;
 import com.epam.preprod.hadoop.extension.PairWritable;
+import com.epam.preprod.model.AccessLog;
+import com.epam.preprod.utility.AccessLogParser;
 import junit.framework.Assert;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
@@ -74,7 +76,7 @@ public class AccessLogTest {
 
         reduceDriver.withInput(new Text("ip7"), values);
 
-        reduceDriver.withOutput( new Text("ip7"), new Text("150.00,300"));
+        reduceDriver.withOutput(new Text("ip7"), new Text("150.00,300"));
         reduceDriver.runTest();
     }
 
@@ -88,6 +90,15 @@ public class AccessLogTest {
 
         combinerDriver.withOutput(new Text("ip7"), new PairWritable(new LongWritable(300), new LongWritable(2)));
         combinerDriver.runTest();
+    }
+
+
+    @Test
+    public void testBrowserParser() throws Exception {
+        String input = "ip44 - - [24/Apr/2011:06:38:33 -0400] \"GET / HTTP/1.1\" 200 12550 \"-\" \"Mozilla/5.0 (compatible; YodaoBot/1.0; http://www.yodao.com/help/webmaster/spider/; )\"";
+        AccessLog parsedLog = AccessLogParser.parse(input);
+        Assert.assertEquals("Expected BROWSER", "Mozilla", parsedLog.getBrowser());
+
     }
 
 
