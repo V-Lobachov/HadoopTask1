@@ -33,7 +33,7 @@ public class AccessLogTest {
 
     private String mInputData = "ip1 - - [24/Apr/2011:04:14:36 -0400] \"GET /~strabal/grease/photo9/927-5.jpg HTTP/1.1\" 200 42011 \"-\" \"Mozilla/5.0 (compatible; YandexImages/3.0; +http://yandex.com/bots)\"";
     private Text mOutputKey = new Text("ip1");
-    private LongWritable requestBytes = new LongWritable(42011);
+    private long requestBytes = 42011L;
     private PairWritable mOutputValue = new PairWritable();
 
     @Before
@@ -53,7 +53,7 @@ public class AccessLogTest {
         mapDriver.withInput(new LongWritable(), new Text(mInputData));
 
         mOutputValue.setFirst(requestBytes);
-        mOutputValue.setSecond(new LongWritable(1));
+        mOutputValue.setSecond(1);
 
         mapDriver.withOutput(mOutputKey, mOutputValue);
         mapDriver.runTest();
@@ -67,12 +67,11 @@ public class AccessLogTest {
                 .findCounter(WATCHER.CORRUPTED).getValue());
     }
 
-
     @Test
     public void testReducer() throws IOException {
         List<PairWritable> values = new ArrayList<>();
-        values.add(new PairWritable(new LongWritable(210), new LongWritable(1)));
-        values.add(new PairWritable(new LongWritable(90), new LongWritable(1)));
+        values.add(new PairWritable(210, 1));
+        values.add(new PairWritable(90, 1));
 
         reduceDriver.withInput(new Text("ip7"), values);
 
@@ -83,12 +82,12 @@ public class AccessLogTest {
     @Test
     public void testCombiner() throws IOException {
         List<PairWritable> values = new ArrayList<>();
-        values.add(new PairWritable(new LongWritable(210), new LongWritable(1)));
-        values.add(new PairWritable(new LongWritable(90), new LongWritable(1)));
+        values.add(new PairWritable(210, 1));
+        values.add(new PairWritable(90, 1));
 
         combinerDriver.withInput(new Text("ip7"), values);
 
-        combinerDriver.withOutput(new Text("ip7"), new PairWritable(new LongWritable(300), new LongWritable(2)));
+        combinerDriver.withOutput(new Text("ip7"), new PairWritable(300, 2));
         combinerDriver.runTest();
     }
 

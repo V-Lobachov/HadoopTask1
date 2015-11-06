@@ -23,7 +23,7 @@ public class AccessLogMapper extends Mapper<LongWritable, Text, Text, PairWritab
     private HashMap<String, Integer> browserCounter = new HashMap<>();
     private static final Logger LOGGER = Logger.getLogger(AccessLogParser.class);
     private Text outputKey = new Text();
-    private LongWritable requestSize = new LongWritable();
+    private long requestSize;
     private PairWritable outputValue = new PairWritable();
 
 
@@ -32,14 +32,14 @@ public class AccessLogMapper extends Mapper<LongWritable, Text, Text, PairWritab
 
         try {
             AccessLog parsedLog = AccessLogParser.parse(value.toString());
-            browserCount(parsedLog);
-
 
             outputKey.set(parsedLog.getIp());
-            requestSize.set(parsedLog.getRequestBytes());
+            requestSize = parsedLog.getRequestBytes();
 
             outputValue.setFirst(requestSize);
-            outputValue.setSecond(new LongWritable(1));
+            outputValue.setSecond(1);
+            outputValue.clanBrowthers();
+            outputValue.addBrowser(parsedLog.getBrowser());
 
             context.write(outputKey, outputValue);
         } catch (DataFormatException e) {
@@ -48,7 +48,7 @@ public class AccessLogMapper extends Mapper<LongWritable, Text, Text, PairWritab
         }
     }
 
-    private void browserCount(AccessLog parsedLog) {
+/*    private void browserCount(AccessLog parsedLog) {
         String key = String.format("%s %s", parsedLog.getIp(), parsedLog.getBrowser());
         Integer browserUsers = browserCounter.get(key);
 
@@ -57,13 +57,13 @@ public class AccessLogMapper extends Mapper<LongWritable, Text, Text, PairWritab
         } else {
             browserCounter.put(key, 1);
         }
-    }
+    }*/
 
-    @Override
+    /*@Override
     protected void cleanup(Context context) throws IOException, InterruptedException {
         for (Map.Entry<String, Integer> data : browserCounter.entrySet()) {
             context.getCounter("USER BROWSER", data.getKey().split(" ")[1]).increment(data.getValue());
         }
 
-    }
+    }*/
 }

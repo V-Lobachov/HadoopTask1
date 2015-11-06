@@ -22,7 +22,7 @@ public class AccessLogMapper extends Mapper<LongWritable, Text, Text, PairWritab
 
     private static final Logger LOGGER = Logger.getLogger(AccessLogParser.class);
     private Text outputKey = new Text();
-    private LongWritable requestSize = new LongWritable();
+    private long requestSize;
     private PairWritable outputValue = new PairWritable();
 
 
@@ -35,10 +35,10 @@ public class AccessLogMapper extends Mapper<LongWritable, Text, Text, PairWritab
             AccessLog parsedLog = AccessLogParser.parse(value.toString());
 
             outputKey.set(parsedLog.getIp());
-            requestSize.set(parsedLog.getRequestBytes());
+            requestSize = parsedLog.getRequestBytes();
 
             outputValue.setFirst(requestSize);
-            outputValue.setSecond(new LongWritable(1));
+            outputValue.setSecond(1);
 
             context.write(outputKey, outputValue);
         } catch (DataFormatException e) {

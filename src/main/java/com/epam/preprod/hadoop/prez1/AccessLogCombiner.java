@@ -12,16 +12,16 @@ import java.io.IOException;
  */
 public class AccessLogCombiner extends Reducer<Text, PairWritable, Text, PairWritable> {
 
-    private LongWritable sum = new LongWritable();
-    private LongWritable counter = new LongWritable();
+    private long sum;
+    private long counter;
     private PairWritable value = new PairWritable();
 
     @Override
     protected void reduce(Text key, Iterable<PairWritable> values, Context context) throws IOException, InterruptedException {
         initialize();
         for (PairWritable data : values) {
-            sum.set(sum.get() + data.getFirst().get());
-            counter.set(counter.get() + data.getSecond().get());
+            sum = sum + data.getFirst();
+            counter +=data.getSecond();
         }
 
         value.setFirst(sum);
@@ -31,7 +31,7 @@ public class AccessLogCombiner extends Reducer<Text, PairWritable, Text, PairWri
     }
 
     private void initialize() {
-        counter.set(0);
-        sum.set(0);
+        counter = 0;
+        sum = 0;
     }
 }

@@ -9,6 +9,8 @@ import org.apache.hadoop.mapred.lib.db.DBWritable;
 import org.apache.hadoop.mapreduce.Reducer;
 
 import java.io.IOException;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by Volodymyr_Lobachov on 11/3/2015.
@@ -19,13 +21,16 @@ public class AccessLogReducer extends Reducer<Text, PairWritable, Text, PairOutp
     private DoubleWritable avg = new DoubleWritable(0);
     private long counter;
     private PairOutputWritable outputValue = new PairOutputWritable();
+    private Set<String> userBrowsers = new HashSet<>();
 
     @Override
     protected void reduce(Text key, Iterable<PairWritable> values, Context context) throws IOException, InterruptedException {
         initialize();
         for (PairWritable data : values) {
-            sum.set(sum.get() + data.getFirst().get());
-            counter += data.getSecond().get();
+            sum.set(sum.get() + data.getFirst());
+            counter += data.getSecond();
+
+            userBrowsers.addAll(data.getBrowthers());
         }
         avg.set((double) sum.get() / counter);
 
@@ -33,10 +38,15 @@ public class AccessLogReducer extends Reducer<Text, PairWritable, Text, PairOutp
         outputValue.setAvg(avg);
         outputValue.setSum(sum);
 
+        for (String browser : userBrowsers) {
+            context.getCounter("USER BROWSER", browser).increment(1);
+        }
+
         context.write(key, outputValue);
     }
 
     private void initialize() {
+        userBrowsers.clear();
         counter = 0;
         sum.set(0);
         avg.set(0);

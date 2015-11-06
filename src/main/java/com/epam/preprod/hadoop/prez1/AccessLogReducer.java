@@ -19,8 +19,8 @@ public class AccessLogReducer extends Reducer<Text, PairWritable, Text, Text> {
     protected void reduce(Text key, Iterable<PairWritable> values, Context context) throws IOException, InterruptedException {
         initialize();
          for (PairWritable data : values){
-             sum+= data.getFirst().get();
-             counter += data.getSecond().get();
+             sum+= data.getFirst();
+             counter += data.getSecond();
          }
         avg = (double) sum/counter;
 
