@@ -48,7 +48,7 @@ public class PairWritable implements Writable {
         first = dataInput.readLong();
         second = dataInput.readLong();
         size = dataInput.readInt();
-
+        browthers.clear();
         for(int i=0; i<size; i++){
             browthers.add(dataInput.readUTF());
         }
@@ -90,7 +90,7 @@ public class PairWritable implements Writable {
         this.browthers.addAll(browthers);
     }
 
-    public void clanBrowthers(){
+    public void cleanBrowthers(){
         this.browthers.clear();
     }
 

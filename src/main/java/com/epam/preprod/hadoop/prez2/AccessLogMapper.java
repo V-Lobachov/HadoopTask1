@@ -38,7 +38,7 @@ public class AccessLogMapper extends Mapper<LongWritable, Text, Text, PairWritab
 
             outputValue.setFirst(requestSize);
             outputValue.setSecond(1);
-            outputValue.clanBrowthers();
+            outputValue.cleanBrowthers();
             outputValue.addBrowser(parsedLog.getBrowser());
 
             context.write(outputKey, outputValue);

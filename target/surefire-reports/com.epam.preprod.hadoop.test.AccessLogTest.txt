@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.epam.preprod.hadoop.test.AccessLogTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.571 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.632 sec

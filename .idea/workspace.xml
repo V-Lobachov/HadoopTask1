@@ -4,25 +4,11 @@
     <list default="true" id="09298eda-23f1-4743-b010-7135848dcd19" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/HadoopTask1-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/HadoopTask1-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/epam/preprod/hadoop/extension/PairWritable.class" afterPath="$PROJECT_DIR$/target/classes/com/epam/preprod/hadoop/extension/PairWritable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/epam/preprod/hadoop/prez1/AccessLogCombiner.class" afterPath="$PROJECT_DIR$/target/classes/com/epam/preprod/hadoop/prez1/AccessLogCombiner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/epam/preprod/hadoop/prez1/AccessLogMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/epam/preprod/hadoop/prez1/AccessLogMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/epam/preprod/hadoop/prez1/AccessLogReducer.class" afterPath="$PROJECT_DIR$/target/classes/com/epam/preprod/hadoop/prez1/AccessLogReducer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/epam/preprod/hadoop/prez2/AccessLogCombiner.class" afterPath="$PROJECT_DIR$/target/classes/com/epam/preprod/hadoop/prez2/AccessLogCombiner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/epam/preprod/hadoop/prez2/AccessLogDriver.class" afterPath="$PROJECT_DIR$/target/classes/com/epam/preprod/hadoop/prez2/AccessLogDriver.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/epam/preprod/hadoop/prez2/AccessLogMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/epam/preprod/hadoop/prez2/AccessLogMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/epam/preprod/hadoop/prez2/AccessLogReducer.class" afterPath="$PROJECT_DIR$/target/classes/com/epam/preprod/hadoop/prez2/AccessLogReducer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/original-HadoopTask1-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/original-HadoopTask1-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/epam/preprod/hadoop/test/AccessLogTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/epam/preprod/hadoop/test/AccessLogTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/extension/PairWritable.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/extension/PairWritable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/prez1/AccessLogCombiner.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/prez1/AccessLogCombiner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/prez1/AccessLogMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/prez1/AccessLogMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/prez1/AccessLogReducer.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/prez1/AccessLogReducer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/prez2/AccessLogCombiner.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/prez2/AccessLogCombiner.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/prez2/AccessLogMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/prez2/AccessLogMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/prez2/AccessLogReducer.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/prez2/AccessLogReducer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/epam/preprod/hadoop/test/AccessLogTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/epam/preprod/hadoop/test/AccessLogTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.epam.preprod.hadoop.test.AccessLogTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.epam.preprod.hadoop.test.AccessLogTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/com.epam.preprod.hadoop.test.AccessLogTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/com.epam.preprod.hadoop.test.AccessLogTest.txt" />
@@ -57,24 +43,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PairWritable.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PairWritable.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/extension/PairWritable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="93" column="31" selection-start-line="93" selection-start-column="31" selection-end-line="93" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.27659574">
+              <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
               <folding>
                 <element signature="e#543#544#0" expanded="true" />
                 <element signature="e#586#587#0" expanded="true" />
-                <element signature="e#1645#1646#0" expanded="true" />
-                <element signature="e#1677#1678#0" expanded="true" />
-                <element signature="e#1733#1734#0" expanded="true" />
-                <element signature="e#1775#1776#0" expanded="true" />
-                <element signature="e#1820#1821#0" expanded="true" />
-                <element signature="e#1858#1859#0" expanded="true" />
-                <element signature="e#1911#1912#0" expanded="true" />
-                <element signature="e#1959#1960#0" expanded="true" />
-                <element signature="e#1993#1994#0" expanded="true" />
-                <element signature="e#2031#2032#0" expanded="true" />
+                <element signature="e#1671#1672#0" expanded="true" />
+                <element signature="e#1703#1704#0" expanded="true" />
+                <element signature="e#1759#1760#0" expanded="true" />
+                <element signature="e#1801#1802#0" expanded="true" />
+                <element signature="e#1846#1847#0" expanded="true" />
+                <element signature="e#1884#1885#0" expanded="true" />
+                <element signature="e#1937#1938#0" expanded="true" />
+                <element signature="e#1985#1986#0" expanded="true" />
+                <element signature="e#2020#2021#0" expanded="true" />
+                <element signature="e#2058#2059#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -84,17 +70,17 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/prez2/AccessLogCombiner.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+              <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AccessLogMapper.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AccessLogMapper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/prez2/AccessLogMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.63829786">
-              <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -133,6 +119,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/prez2/AccessLogReducer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/prez2/AccessLogCombiner.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/prez2/AccessLogMapper.java" />
+        <option value="$USER_HOME$/Downloads/access_logs/input/100000" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/extension/PairWritable.java" />
       </list>
     </option>
@@ -1038,40 +1025,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp10361/root/hadoop/000000">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8253425">
+          <caret line="13501" column="0" selection-start-line="13501" selection-start-column="0" selection-end-line="13501" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/access_logs/input/100000">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36624774">
+          <caret line="9" column="152" selection-start-line="9" selection-start-column="152" selection-end-line="9" selection-end-column="152" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/prez2/AccessLogMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/prez2/AccessLogCombiner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/extension/PairWritable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="93" column="31" selection-start-line="93" selection-start-column="31" selection-end-line="93" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.27659574">
+          <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
           <folding>
             <element signature="e#543#544#0" expanded="true" />
             <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#1645#1646#0" expanded="true" />
-            <element signature="e#1677#1678#0" expanded="true" />
-            <element signature="e#1733#1734#0" expanded="true" />
-            <element signature="e#1775#1776#0" expanded="true" />
-            <element signature="e#1820#1821#0" expanded="true" />
-            <element signature="e#1858#1859#0" expanded="true" />
-            <element signature="e#1911#1912#0" expanded="true" />
-            <element signature="e#1959#1960#0" expanded="true" />
-            <element signature="e#1993#1994#0" expanded="true" />
-            <element signature="e#2031#2032#0" expanded="true" />
+            <element signature="e#1671#1672#0" expanded="true" />
+            <element signature="e#1703#1704#0" expanded="true" />
+            <element signature="e#1759#1760#0" expanded="true" />
+            <element signature="e#1801#1802#0" expanded="true" />
+            <element signature="e#1846#1847#0" expanded="true" />
+            <element signature="e#1884#1885#0" expanded="true" />
+            <element signature="e#1937#1938#0" expanded="true" />
+            <element signature="e#1985#1986#0" expanded="true" />
+            <element signature="e#2020#2021#0" expanded="true" />
+            <element signature="e#2058#2059#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/preprod/hadoop/prez2/AccessLogMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63829786">
-          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
