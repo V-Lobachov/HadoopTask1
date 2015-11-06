@@ -42,7 +42,7 @@ public class AccessLogDriver extends Configured implements Tool {
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(PairOutputWritable.class);
 
-
+        job.setNumReduceTasks(2);
 
         TextInputFormat.addInputPath(job, new Path(args[0]));
         SequenceFileOutputFormat.setOutputPath(job, new Path(args[1]));
