@@ -90,6 +90,12 @@
     </dependencies>
 
 
+    <scm>
+        <developerConnection>scm:git:git@github.com:Volodymyr-Lobachov/HadoopTask1.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
+
     <build>
         <plugins>
             <plugin>
@@ -107,6 +113,18 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                    <useReleaseProfile>true</useReleaseProfile>
+                    <releaseProfiles>release</releaseProfiles>
+                    <goals>deploy</goals>
+                </configuration>
             </plugin>
 
             <plugin>
